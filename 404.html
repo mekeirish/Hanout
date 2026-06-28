@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirection...</title>
+  <script>
+    // Récupère l'URL actuelle
+    var path = window.location.pathname;
+    var query = window.location.search;
+    var hash = window.location.hash;
+
+    // Redirige vers la page d'accueil en conservant les paramètres
+    window.location.href = "/hanout/" + "?" + path.slice(1) + query + hash;
+  </script>
+</head>
+<body>
+  <p>Redirection en cours...</p>
+</body>
+</html>
