@@ -1,32 +1,12 @@
 {
   "client1": {
-    "owner": "monClient1",
-    "repo": "ma-boutique-1",
+    "owner": "mekeirish",
+    "repo": "boutique-client1",
     "passwordHash": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
     "settings": {
       "title": "Boutique de Jean",
       "currency": "€",
       "ntfyTopic": "client1_commandes"
-    }
-  },
-  "client2": {
-    "owner": "monClient2",
-    "repo": "ma-boutique-2",
-    "passwordHash": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
-    "settings": {
-      "title": "Boutique de Marie",
-      "currency": "$",
-      "ntfyTopic": "client2_commandes"
-    }
-  },
-  "client3": {
-    "owner": "monClient3",
-    "repo": "ma-boutique-3",
-    "passwordHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-    "settings": {
-      "title": "Boutique de Pierre",
-      "currency": "€",
-      "ntfyTopic": "client3_commandes"
     }
   }
 }
