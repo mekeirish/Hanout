@@ -1,12 +1,12 @@
 {
-  "client1": {
+  "madani": {
     "owner": "mekeirish",
-    "repo": "boutique-client1",
-    "passwordHash": "fe126baffd6fb06d724a82eb0e2672b4f8426807f3d4b11e698ef363aed6ac8d",
+    "repo": "boutique-madani",
+    "passwordHash": "b4e024b001ba474f95a4feb6101d72a0f913661efec8a53b64adf11234442c6f",
     "settings": {
-      "title": "Boutique de Jean",
+      "title": "Boutique de Madani",
       "currency": "€",
-      "ntfyTopic": "client1_commandes"
+      "ntfyTopic": "madani_commandes"
     }
   }
 }
