@@ -33,8 +33,7 @@
     const vendeur = params.get("vendeur") || localStorage.getItem("vendeur_name") || "madani";
 
     // ---- TOKEN MAÎTRE (à remplacer par le tien) ----
-    const MASTER_TOKEN = "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";
-
+    const MASTER_TOKEN = await fetch("./token.json").then(r => r.json()).then(d => d.master_token);
     // ---- ÉTATS DE CONFIGURATION ----
     const [config, setConfig] = useState(null);
     const [isConfigLoaded, setIsConfigLoaded] = useState(false);
