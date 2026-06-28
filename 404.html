@@ -4,13 +4,16 @@
   <meta charset="utf-8">
   <title>Redirection...</title>
   <script>
-    // Récupère l'URL actuelle
+    // Récupère le chemin et les paramètres
     var path = window.location.pathname;
     var query = window.location.search;
     var hash = window.location.hash;
 
-    // Redirige vers la page d'accueil en conservant les paramètres
-    window.location.href = "/hanout/" + "?" + path.slice(1) + query + hash;
+    // Construit la nouvelle URL : base + paramètres
+    var newUrl = "/hanout/" + "?" + path.slice(1) + query + hash;
+
+    // Redirige vers index.html avec les paramètres
+    window.location.replace(newUrl);
   </script>
 </head>
 <body>
