@@ -32,8 +32,16 @@
     const params = new URLSearchParams(window.location.search);
     const vendeur = params.get("vendeur") || localStorage.getItem("vendeur_name") || "madani";
 
-    // ---- TOKEN MAÎTRE (à remplacer par le tien) ----
-    const MASTER_TOKEN = await fetch("./token.json").then(r => r.json()).then(d => d.master_token);
+    // ---- TOKEN MAÎTRE (stocké dans localStorage) ----
+let MASTER_TOKEN = localStorage.getItem("master_token");
+if (!MASTER_TOKEN) {
+  MASTER_TOKEN = prompt("🔐 Entrez le token maître GitHub :");
+  if (MASTER_TOKEN) {
+    localStorage.setItem("master_token", MASTER_TOKEN);
+  } else {
+    alert("Token requis pour utiliser l'application.");
+  }
+}
     // ---- ÉTATS DE CONFIGURATION ----
     const [config, setConfig] = useState(null);
     const [isConfigLoaded, setIsConfigLoaded] = useState(false);
